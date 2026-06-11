@@ -10,9 +10,10 @@ import android.widget.RemoteViews
 class QuickChatWidget : AppWidgetProvider() {
     override fun onUpdate(context: Context, manager: AppWidgetManager, ids: IntArray) {
         for (id in ids) {
-            val intent = Intent(context, MainActivity::class.java)
+            val intent = Intent(context, QuickInputActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
             val pending = PendingIntent.getActivity(
-                context, 0, intent,
+                context, id, intent,
                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
             val views = RemoteViews(context.packageName, R.layout.widget_layout)

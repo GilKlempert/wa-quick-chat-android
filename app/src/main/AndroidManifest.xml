@@ -22,6 +22,12 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".QuickInputActivity"
+            android:exported="false"
+            android:theme="@style/TransparentTheme"
+            android:excludeFromRecents="true" />
+
         <receiver
             android:name=".QuickChatWidget"
             android:exported="true">
