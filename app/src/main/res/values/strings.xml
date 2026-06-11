@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WA Quick Chat</string>
+    <string name="hint_phone">הזן מספר טלפון</string>
+    <string name="btn_open">פתח בוואטסאפ</string>
+    <string name="history_title">אחרונים</string>
+    <string name="clear_all">נקה הכל</string>
+    <string name="widget_description">פתיחה מהירה של צ\'אט בוואטסאפ</string>
+    <string name="widget_tap">לחץ להזנת מספר</string>
+</resources>
